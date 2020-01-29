@@ -25,7 +25,8 @@
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
     <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->    
-    <preference name="CameraUsesGeolocation" value="false" />     
+    <preference name="CameraUsesGeolocation" value="false" /> 
+    <preference name="phonegap-version" value="cli-9.0.0" />    
     <platform name="android">
         <allow-intent href="market:*" />    
     </platform>
