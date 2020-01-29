@@ -197,11 +197,9 @@ function callServer(pTask,pData,pUserId,pCallback) {
     } 
     else if (pTask === "loginCheck") {
         var jsonstr = prepData(pData);
-        alert("sending "+ pData + " and " + pUserId);
         $.post( serverpath + "checkLogin.php", { uPassword: pData, uUserId: pUserId, uAction: "checkLogin" })
           .done(function( result ) {
               //console.log(result);
-              alert('inside callback');
              var data = jQuery.parseJSON(result);
              pCallback(data);       
             }
