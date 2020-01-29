@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.gisgames.terrorcards" version="1.1.21" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<!--<widget id="com.gisgames.terrorcards" version="1.1.21" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">-->
+<widget id="com.gisgames.terrorcards" version="1.1.21" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">    
     <name>Terror Cards</name>
     <description>
         Digital Horror Movies and Celebrities Trading Cards
@@ -26,10 +27,17 @@
     <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->    
     <preference name="CameraUsesGeolocation" value="false" /> 
-    <preference name="phonegap-version" value="cli-9.0.0" />    
+    <preference name="phonegap-version" value="cli-9.0.0" /> 
+    <!--
     <platform name="android">
         <allow-intent href="market:*" />    
     </platform>
+    --> 
+    <platform name="android">
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+    </platform>      
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
