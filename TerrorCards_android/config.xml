@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.gisgames.terrorcards" version="1.1.21" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Terror Cards</name>
+    <description>
+        Digital Horror Movies and Celebrities Trading Cards
+    </description>
+    <author email="support@TerrorCards.com" href="http://TerrorCards.com">
+        Terror Cards Admin
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+	<preference name="permissions"                value="none"/>
+    <preference name="orientation" 				  value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen"                 value="false" />          <!-- all: hides the status bar at the top of the screen -->
+    <preference name="webviewbounce"              value="false" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+    <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
+    <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
+    <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+    <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->    
+    <preference name="CameraUsesGeolocation" value="false" />     
+    <platform name="android">
+        <allow-intent href="market:*" />    
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-device"/>
+    <plugin name="cordova-plugin-camera" />
+    <plugin name="cordova-plugin-compat" />
+    <plugin name="cordova-plugin-file" />
+    <plugin name="cordova-plugin-inappbrowser" />  
+    <plugin name="cc.fovea.cordova.purchase" spec="~8.1.1">
+        <variable name="BILLING_KEY" value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmvDNiQ4vLR1QTxvY7IXiaZgcF9gqcnoxHwUvGA1ZmUFBzcoF7ZdnkUkv537X7B7T53jPALMFKThF7tG8ZYFt9SMR5KOjtR4AdyP/SK01y5bRUXiAZl/0pkU1wnzz3bafU31SOsqJbc4Jmj7bNMFgS4eRMd4blyb7OejjAEz+/RlavKYF1zbYIL4BI5WqzHS04rtpBznYZp5E7EfVF3fQJAm3JRxuq2t92EsP6VmLyrjzxwFTQzUkRLiSBhZ0y9B0BJRO3GLt7Ca43nqudScIfHkCsywBcK3sFoF54dwedNbGDiL/AOB9td1bgFDaiZ0KmRBTCOIKIna37oa5qfxldwIDAQAB" />
+    </plugin>    
+    <icon src="icon.png" />
+    <splash src="splash.png" />  
+</widget>
