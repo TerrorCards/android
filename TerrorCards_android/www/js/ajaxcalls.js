@@ -202,10 +202,7 @@ function callServer(pTask,pData,pUserId,pCallback) {
               //console.log(result);
              var data = jQuery.parseJSON(result);
              pCallback(data);       
-            }
-            .error(function(err){
-                alert(err);
-            }));      
+            });      
     } 
     else if (pTask === "userInfo") {
     	var jsonstr = prepData(pData);

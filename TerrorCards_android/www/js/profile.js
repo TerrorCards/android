@@ -1,7 +1,7 @@
-$('#checkUserSubmit').on("click", loginCheck);
-$('#createDefaultAccount').on("click", createDefaultAccount);
-$('#checkUserSubmit').on("tap", loginCheck);
-$('#createDefaultAccount').on("tap", createDefaultAccount);
+//$('#checkUserSubmit').on("click", loginCheck);
+//$('#createDefaultAccount').on("click", createDefaultAccount);
+//$('#checkUserSubmit').on("tap", loginCheck);
+//$('#createDefaultAccount').on("tap", createDefaultAccount);
 
 function loginCheck() {
     if(checkVirtual())
